@@ -1,0 +1,23 @@
+<div id="loginMain" class ="loginpanel">
+<form #customerForm = "ngForm">
+   <div class = "form-group">
+     <input type= "text" class ="form-control" id="name"
+        required [(ngModel)] = "_login.username" name= "name" ng-init= "name = 'user name'">
+   </div>
+    <div class = "form-group">
+    <input type= "text" class ="form-control" id="password"
+       required [(ngModel)] = "_login.passwd" name= "password">
+  </div>
+  <br>
+    
+  <button (click)="LoginAdmin1()">Admin</button>
+  <button (click)="LoginTeacher()">Teacher</button>
+
+</form>
+
+
+</div>
+
+ 
+
+

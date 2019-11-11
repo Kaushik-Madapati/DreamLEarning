@@ -1,0 +1,28 @@
+<div id="StudentMain" ng-cloak class ="studentpanel">
+   <h1> Student Overview  </h1>
+    <table class ="table">
+      <tr>
+           <th> # </th>
+           <th> Name </th>
+           <th> Room </th>
+      </tr>
+
+
+      <tr *ngFor = "let student of students; let i = index " >
+        <td> {{i+1}} </td>
+        <td> <button (click)="studentInfo(student._id)">{{student.name}} </button> 
+      
+        <td> <button  (click)="roomInfo(student.roomID)">{{student.room}} </button> 
+          
+      </tr>
+    </table>
+    <br>
+    <br>
+    <button (click)="addStudent()">Add Student </button> 
+    <button (click)="studentBackground()">Student Background</button> 
+    <button (click)="studentAssessment()">Student Assessment</button> 
+  
+</div>
+
+
+
